@@ -1,0 +1,111 @@
+/* 页面背景 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001f3d 16.66%, #ff4d4d); /* 上部1/6为蓝色，下5/6为红色 */
+    overflow: hidden;
+}
+
+/* 过场动画容器 */
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 红包样式 */
+.red-envelope {
+    width: 80px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: jump 1s ease-in-out infinite; /* 只保留跳动效果 */
+}
+
+/* 红包跳动效果 */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* 烟花容器 */
+.fireworks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* 烟花样式 */
+.firework {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    animation: fireworks 3s ease-out forwards;
+}
+
+/* 烟花效果 */
+@keyframes fireworks {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+        box-shadow: 0 0 50px 20px rgba(255, 0, 0, 0.3),
+                    0 0 50px 20px rgba(255, 215, 0, 0.3);
+    }
+}
+
+/* 恭喜发财文字样式 */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+}
+
+
+.congratulations {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.signature {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+}
+
+body .signature {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+}

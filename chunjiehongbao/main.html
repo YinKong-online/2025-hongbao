@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年春节红包</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <button id="registerBtn">注册</button>
+    </div>
+    <div class="hongbao">
+        <!-- 点击红包图片后跳转到红包页面 -->
+        <a href="hongbao.html">
+            <img class="hongbao-img" src="红包.png" alt="红包">
+        </a>
+    </div>
+    <div class="countdown">
+        <h1>距离2025年春节还有：</h1>
+        <div id="countdownTimer"></div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>请输入你的名字</h2>
+            <input type="text" id="usernameInput" placeholder="请输入名字" />
+            <button id="saveNameBtn">保存</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
