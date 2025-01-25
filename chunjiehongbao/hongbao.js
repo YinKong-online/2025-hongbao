@@ -19,6 +19,6 @@ $(document).ready(function() {
 
     // 3秒后跳转到发红包页面
     setTimeout(function() {
-        window.location.href = "faHongbao.html"; // 这里是你发红包的页面地址
+        window.location.href = "chunjiehongbao/faHongbao.html"; // 这里是你发红包的页面地址
     }, 3000); // 3秒钟后跳转
 });
