@@ -6,7 +6,7 @@ window.onload = function () {
     const usernameInput = document.getElementById('usernameInput');
     
     // 目标时间：2025年1月29日 00:00:00
-    const targetDate = new Date('2025-01-25T00:00:00');
+    const targetDate = new Date('2025-01-29T00:00:00');
     
     // 获取红包链接元素
     const hongbaoLink = document.getElementById('hongbaoLink');
