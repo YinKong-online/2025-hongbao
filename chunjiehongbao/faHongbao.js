@@ -74,7 +74,7 @@ updateUI();
 const username = localStorage.getItem('username');
 if (!username) {
     // 如果没有用户名，跳回首页
-    window.location.href = 'index.html';
+    window.location.href = "main.html";
 } else {
     document.getElementById('usernameDisplay').textContent = username;
 }
