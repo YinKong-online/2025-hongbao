@@ -1,15 +1,11 @@
 // 总红包个数
-const totalPackets = 6;
+const totalPackets = 7;
 
 // 固定金额
-const packetAmounts = [6.66, 8.88];
-// 随机分配的金额
-const randomAmount = 4.46;
-// 将4.46元分成4份
-const randomPackets = splitAmount(randomAmount, 4);
+const packetAmounts = [6.66,8.88,0.66,0.88,0.99,1.09,1.10];
 
 // 所有红包金额
-let allPackets = [...packetAmounts, ...randomPackets];
+let allPackets = [...packetAmounts];
 
 // 获取剩余红包数
 let remainingPackets = parseInt(localStorage.getItem('remainingPackets')) || totalPackets;
