@@ -109,3 +109,38 @@ body .signature {
     font-size: 12px;
     font-family: "Arial", sans-serif;
 }
+
+/* 响应式设计：针对小屏幕调整布局 */
+@media screen and (max-width: 768px) {
+    .hongbao {
+        width: 90%;
+    }
+
+    .countdown {
+        font-size: 20px;
+    }
+
+    #countdownTimer {
+        font-size: 25px;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+/* 超小屏幕（手机）优化 */
+@media screen and (max-width: 480px) {
+    .hongbao {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #countdownTimer {
+        font-size: 20px;
+    }
+}
